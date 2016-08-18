@@ -2,13 +2,11 @@ import java.util.Scanner;
 
 public class HumanPlayer {
 
-	private static String getPlayerChoice(){
-		System.out.println("Pick rock, paper or scissors.");
+	public String generateRoshambo(){
+		
 		Scanner choice = new Scanner(System.in);
-		String playerChoice = choice.nextLine();
-		if (CHOICES.contains(playerChoice)){
-			return playerChoice;
+			return choice.nextLine();
 		}
-		throw new Exception(playerChoice);
+	
 	}
-}
+

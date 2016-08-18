@@ -1,5 +1,5 @@
 
-public class Player {
+public abstract class Player {
 	//playerName, set, get
 	public String humanPlayer;
 	public String getHumanPlayer() {
@@ -9,16 +9,9 @@ public class Player {
 	public void setHumanPlayer(String humanPlayer) {
 		this.humanPlayer = humanPlayer;
 	}
-
-	public String theRock;
-	public String random;
 	
 	//Roshambo value will be 3 (rock, paper, scissors)
-		public Roshambo generateRoshambo(){
-			return Roshambo.Rock;
-		}
-	
-	//generate roshambo
-	
+		public abstract String generateRoshambo();
+			
 	
 }

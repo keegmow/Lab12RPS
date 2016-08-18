@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class RandomPlayer extends Player {
-	private static String getRandom(){
+	public String generateRoshambo(){
 		Random randomNumber = new Random();
 		
 		int computerNumber = randomNumber.nextInt(3);
