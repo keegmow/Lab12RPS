@@ -1,17 +1,20 @@
 
 public abstract class Player {
-	//playerName, set, get
-	public String humanPlayer;
-	public String getHumanPlayer() {
-		return humanPlayer;
+	private String playerName;
+	
+	public Player(String name) {
+		setPlayer(name);
 	}
-
-	public void setHumanPlayer(String humanPlayer) {
-		this.humanPlayer = humanPlayer;
+	//playerName, set, get
+	public void setPlayer(String playerName) {
+		this.playerName = playerName;
+	}
+	public String getPlayer() {
+		return playerName;
 	}
 	
 	//Roshambo value will be 3 (rock, paper, scissors)
-		public abstract String generateRoshambo();
+	public abstract String generateRoshambo();
 			
 	
 }
